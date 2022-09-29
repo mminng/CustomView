@@ -15,6 +15,7 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
+        android:layout_marginBottom="500dp"
         app:layout_constraintBottom_toBottomOf="@+id/customView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/customView"
