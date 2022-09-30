@@ -27,28 +27,29 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val view: CustomView = findViewById(R.id.customView)
+        val view: CircleImageView = findViewById(R.id.customView)
+//        view.setImageResource(R.mipmap.ic_launcher)
         findViewById<TextView>(R.id.textView).setOnClickListener {
-            view.resetCount()
-            val random: Int = Random.nextInt(10..360)
-            val propertyP: PropertyValuesHolder =
-                PropertyValuesHolder.ofFloat(
-                    "progress",
-                    0F, random.toFloat()
-                )
+//            view.resetCount()
+//            val random: Int = Random.nextInt(10..360)
+//            val propertyP: PropertyValuesHolder =
+//                PropertyValuesHolder.ofFloat(
+//                    "progress",
+//                    0F, random.toFloat()
+//                )
 //            val propertyC: PropertyValuesHolder = PropertyValuesHolder.ofInt(
 //                "BackgroundColor",
 //                resources.getColor(R.color.purple_200),
 //                resources.getColor(R.color.teal_700),
 //            )
-            val animator: ObjectAnimator =
-                ObjectAnimator.ofPropertyValuesHolder(
-                    view,
-                    propertyP,
-//                    propertyC
-                )
-            animator.duration = 3000
-            animator.start()
+//            val animator: ObjectAnimator =
+//                ObjectAnimator.ofPropertyValuesHolder(
+//                    view,
+//                    propertyP,
+////                    propertyC
+//                )
+//            animator.duration = 3000
+//            animator.start()
 
 //            val animatorT: ObjectAnimator =
 //                ObjectAnimator.ofFloat(view, "progress", 0F, random.toFloat())
